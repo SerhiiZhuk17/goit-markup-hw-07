@@ -94,9 +94,7 @@ body {
   border-radius: 4px;
   transition: var(--transition);
 }
-
-.order-button:hover,
-.order-button:focus {
+.order-button:hover, .order-button:focus {
   background-color: #188CE8;
 }
 
@@ -123,7 +121,6 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   transition: var(--transition);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -159,19 +156,16 @@ body {
   border-radius: 50%;
   transition: var(--transition);
 }
-
-.modal-close-button:hover,
-.modal-close-button:focus {
+.modal-close-button:hover, .modal-close-button:focus {
   border-color: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .modal-close-btn-icon {
   transition: fill var(--accent-color) var(--transition);
 }
-
-.modal-close-button:hover .modal-close-btn-icon,
-.modal-close-button:focus .modal-close-btn-icon {
+.modal-close-button:hover .modal-close-btn-icon, .modal-close-button:focus .modal-close-btn-icon {
   fill: var(--accent-color);
+  transition: var(--transition);
 }
 
 .modal-title {
@@ -232,12 +226,10 @@ body {
   color: var(--primary-text-color-light-theme);
   transition: border-color var(--transition);
 }
-
 .contact-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
-
 .contact-form-input:focus + .modal-form-imput-icon {
   fill: var(--accent-color);
 }
@@ -277,7 +269,6 @@ body {
   color: rgba(117, 117, 117, 0.5);
   transition: border-color var(--transition);
 }
-
 .modal-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -302,7 +293,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .contact-form-check-desc::before {
   margin-right: 7px;
   border: 2px solid #303030;
@@ -349,9 +339,7 @@ body {
   border-radius: 4px;
   transition: var(--transition);
 }
-
-.contact-form-btn-subm:hover,
-.contact-form-btn-subm:focus {
+.contact-form-btn-subm:hover, .contact-form-btn-subm:focus {
   background-color: #188CE8;
 }
 
@@ -384,9 +372,7 @@ body {
   padding: 10px 28px;
   transition: var(--transition);
 }
-
-.contact-form-btn:hover,
-.contact-form-btn:focus {
+.contact-form-btn:hover, .contact-form-btn:focus {
   background-color: #188CE8;
 }
 
@@ -434,7 +420,6 @@ body {
 .menu-item {
   position: relative;
 }
-
 .menu-item:not(:last-child) {
   display: flex;
   margin-right: 40px;
@@ -453,15 +438,14 @@ body {
   display: block;
   transition: var(--transition);
 }
-
-.menu-link:hover,
-.menu-link:focus {
+.menu-link:hover, .menu-link:focus {
   color: var(--accent-color);
 }
 
 .contacts {
   display: flex;
   justify-content: flex-end;
+  gap: 30px;
 }
 
 .icon-envelope {
@@ -473,9 +457,7 @@ body {
   max-width: 16px;
   max-height: 12px;
 }
-
-.icon-envelope:hover,
-:focus {
+.icon-envelope:hover, .icon-envelope:focus {
   color: var(--accent-color);
 }
 
@@ -501,28 +483,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-light-theme);
   transition: var(--transition);
-}
-
-.contact-mail {
   margin-left: auto;
-  margin-right: 50px;
-  transition: var(--transition);
 }
-
-.contact-mail:hover,
-:focus {
-  color: var(--accent-color);
-}
-
+.contact-mail:hover, .contact-mail:focus,
 .contact-number:hover,
-:focus {
+.contact-number:focus {
   color: var(--accent-color);
 }
 
 .menu-link.current {
   color: var(--accent-color);
 }
-
 .menu-link.current::after {
   position: absolute;
   bottom: -1px;
@@ -551,6 +522,9 @@ body {
 .features-list {
   max-width: 270px;
 }
+.features-list:not(:last-child) {
+  margin-right: 30px;
+}
 
 .features-list-container {
   height: 120px;
@@ -567,10 +541,6 @@ body {
 .features-list-svg {
   width: 70px;
   height: 70px;
-}
-
-.features-list:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-title {
@@ -606,7 +576,6 @@ body {
   align-items: flex-end;
   position: relative;
 }
-
 .img-list:not(:last-child) {
   margin-right: 30px;
 }
@@ -648,11 +617,9 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-top: none;
 }
-
 .employees-card:not(:nth-child(4n)) {
   margin-right: 30px;
 }
-
 .employees-card:not(:nth-last-child(-n+4)) {
   margin-bottom: 30px;
 }
@@ -705,16 +672,14 @@ body {
   fill: #AFB1B8;
   transition: var(--transition);
 }
+.social-list-link:hover, .social-list-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-text-color-dark-theme);
+}
 
 .social-list-link-dark {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #FFFFFF;
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-text-color-dark-theme);
 }
 
 .social-list-icon:hover {
@@ -752,9 +717,7 @@ body {
   border-style: none;
   transition: var(--transition);
 }
-
-.main-filt-button:hover,
-.main-filt-button:focus {
+.main-filt-button:hover, .main-filt-button:focus {
   border-style: none;
   color: #FFFFFF;
   background-color: var(--accent-color);
@@ -774,34 +737,14 @@ body {
   border: 1px solid #EEEEEE;
   transition: var(--transition);
 }
-
-.portf-items:hover,
-.portf-items:focus {
+.portf-items:hover, .portf-items:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .portf-items:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
-
 .portf-items:not(:nth-child(3n)) {
   margin-right: 30px;
-}
-
-.portf-items-link {
-  display: block;
-  transition: var(--transition);
-}
-
-.portf-items-link:hover .overlay,
-.portf-items-link:focus .overlay {
-  transform: translate(0, 0);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portf-items-link-wrapper {
-  position: relative;
-  overflow: hidden;
 }
 
 .overlay {
@@ -826,6 +769,20 @@ body {
   background-position: center;
   background-size: cover;
   transition: var(--transition);
+}
+.portf-items-link:hover .overlay, .portf-items-link:focus .overlay {
+  transform: translate(0, 0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portf-items-link {
+  display: block;
+  transition: var(--transition);
+}
+
+.portf-items-link-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
 .portf-items-styles {
@@ -871,9 +828,7 @@ body {
   fill: #AFB1B8;
   transition: var(--transition);
 }
-
-.customers-box:hover,
-.customers-box:focus {
+.customers-box.customers-box:hover, .customers-box.customers-box:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }

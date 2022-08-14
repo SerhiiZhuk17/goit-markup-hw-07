@@ -3,9 +3,7 @@
     height: 581px;
     width: 526px;
     background-color: rgb(255, 255, 255);
-
     padding: 40px;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,47 +15,44 @@
 }
 
 .modal-close-button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    ;
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    transition: var(--transition);
-}
-
-.modal-close-button:hover,
-.modal-close-button:focus {
-    border-color: 1px solid rgba(33, 33, 33, 0.2);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: var(--transition);
+    
+    &:hover,
+    &:focus {
+  border-color: 1px solid rgba(33, 33, 33, 0.2);
+ }
 }
 
 .modal-close-btn-icon {
-    transition: fill var(--accent-color) var(--transition);
-
-}
-
-.modal-close-button:hover .modal-close-btn-icon,
-.modal-close-button:focus .modal-close-btn-icon {
-    fill: var(--accent-color);
+  transition: fill var(--accent-color) var(--transition);
+  
+  .modal-close-button:hover &,
+  .modal-close-button:focus & {
+  fill: var(--accent-color);
+  transition: var(--transition);
+  }
 }
 
 .modal-title {
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: var(--primary-text-color-light-theme);
     font-weight: var(--primary-font-weight);
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-
 }

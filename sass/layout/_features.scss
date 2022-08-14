@@ -5,6 +5,10 @@
 
 .features-list {
     max-width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .features-list-container {
@@ -22,10 +26,6 @@
 .features-list-svg {
     width: 70px;
     height: 70px;
-}
-
-.features-list:not(:last-child) {
-    margin-right: 30px;
 }
 
 .features-title {

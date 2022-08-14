@@ -21,12 +21,12 @@
     border-radius: 4px;
     fill: #AFB1B8;
     transition: var(--transition);
-}
-
-.customers-box:hover,
-.customers-box:focus {
+    
+    &.customers-box:hover,
+    &.customers-box:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
+    }
 }
 
 .customers-svg {

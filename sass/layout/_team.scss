@@ -16,14 +16,14 @@
 .employees-card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-top: none;
-}
-
-.employees-card:not(:nth-child(4n)) {
+    
+    &:not(:nth-child(4n)) {
     margin-right: 30px;
-}
-
-.employees-card:not(:nth-last-child(-n+4)) {
+    }
+    
+    &:not(:nth-last-child(-n+4)) {
     margin-bottom: 30px;
+    }
 }
 
 .images {}
@@ -76,21 +76,22 @@
     background-color: #FFFFFF;
     fill: #AFB1B8;
     transition: var(--transition);
+    
+        &:hover,
+        &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-text-color-dark-theme);
+    }
 }
+
 
 .social-list-link-dark {
     background-color: rgba(255, 255, 255, 0.1);
     fill: #FFFFFF;
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--accent-color);
-    fill: var(--primary-text-color-dark-theme);
-}
-
-.social-list-icon {}
-
-.social-list-icon:hover {
+.social-list-icon {
+    &:hover {
     fill: #FFFFFF;
+    }
 }
