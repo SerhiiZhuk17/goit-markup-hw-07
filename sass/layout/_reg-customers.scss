@@ -11,9 +11,7 @@
 .customers-list {}
 
 .customers-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     min-width: 170px;
     min-height: 92px;
     margin: 0;

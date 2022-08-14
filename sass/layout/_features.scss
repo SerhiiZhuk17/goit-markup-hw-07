@@ -14,9 +14,7 @@
 .features-list-container {
     height: 120px;
     max-width: 270px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     background-position: center;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -30,18 +28,14 @@
 
 .features-title {
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font($fw: 700);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color-light-theme);
 }
 
 .description-features-title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font($fw: 400, $lh: 24px);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-light-theme);
 }

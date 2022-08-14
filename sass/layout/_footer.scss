@@ -40,8 +40,8 @@
     flex-direction: column;
 }
 
-.footer-contact-mail,
-.footer-contact-number {
+.footer-contact__mail,
+.footer-contact__number {
     margin-bottom: 9px;
     font-weight: 400;
     font-size: 14px;
@@ -60,9 +60,7 @@
 
 .join-title {
     display: flex;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font($fw: 700);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;

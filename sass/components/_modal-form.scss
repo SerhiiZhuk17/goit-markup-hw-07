@@ -97,9 +97,7 @@
 }
 
 .contact-form-checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     padding: auto;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -112,10 +110,7 @@
 }
 
 .contact-form-check-desc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+  @include flex-center;
   &::before {
   margin-right: 7px;
   border: 2px solid #303030;
@@ -180,9 +175,7 @@
 }
 
 .contact-form-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     background-color: var(--accent-color);
     font-weight: var(--primary-font-weight);
     font-size: 16px;
